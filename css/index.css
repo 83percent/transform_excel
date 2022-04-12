@@ -1,0 +1,52 @@
+div#wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.upload {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+section.upload > h2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+section.upload > label {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.3;
+    transition-duration: 0.3s;
+}
+section.upload > label:hover {
+    opacity: 1.0;
+}
+section.upload > label > i {
+    font-size: 6rem;
+    margin: 2rem 0;
+}
+section.upload > label > input {
+    display: none;
+}
+section.upload > div {
+    display: flex;
+    align-items: center;
+    color: #aaa;
+}
+section.upload > div > i {
+    font-size: 1.1rem;
+}
+section.upload > div > p {
+    font-size: 0.80rem;
+    margin-left: 4px;
+    margin-bottom: 3px;
+}

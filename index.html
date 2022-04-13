@@ -11,6 +11,7 @@
         <!-- lib -->
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js"></script>
+        <script src="./js/index.js"></script>
     </head>
     <body>
         <div id="app">
@@ -19,7 +20,7 @@
                     <h2>변환하려는 파일</h2>
                     <label>
                         <i class="material-icons-outlined">description</i>
-                        <input type="file" @change="upload">
+                        <input type="file" onchange="upload(event)">
                     </label>
                     <div>
                         <i class="material-icons-outlined">error_outline</i>
@@ -30,11 +31,11 @@
                     <h2>변환이 완료되었어요</h2>
                     <label>
                         <i class="material-icons-outlined">sim_card_download</i>
-                        <button @click="exportSheet"></button>
+                        <button onclick="exportSheet(event)"></button>
                     </label>
                 </section>
             </div>
         </div>
-        <script src="./js/index.js"></script>
+        
     </body>
 </html>
